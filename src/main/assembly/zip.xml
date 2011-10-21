@@ -25,5 +25,12 @@
     	<directory>${project.basedir}/src/main/resources/custom-lib</directory>
     	<outputDirectory>/custom-lib</outputDirectory>
     </fileSet>
+    <fileSet>
+    	<directory>${project.basedir}/src/main/resources</directory>
+    	<outputDirectory>/</outputDirectory>
+    	<includes>
+        	<include>README.txt</include>
+      	</includes>
+    </fileSet>
   </fileSets>
 </assembly>
