@@ -11,12 +11,18 @@ fi
 
 if [ "" != "$POLOPOLY_USER" ]
 then
-        options="$options --user=$POLOPOLY_USER"
+        options="$options --loginuser=$POLOPOLY_USER"
 fi
 
 if [ "" != "$POLOPOLY_PASSWORD" ]
 then
-        options="$options --password=$POLOPOLY_PASSWORD"
+        options="$options --loginpassword=$POLOPOLY_PASSWORD"
+fi
+
+## The options does not work together with help
+if [[ "help" = $1 ]]
+then
+   options=""
 fi
 
 if [ -d $dir/custom-lib ] 
@@ -47,8 +53,9 @@ then
     done
 fi
 
-if [ "$1" = "--verbose" ]
+if [ "--verbose" = "$1" ]
 then
+    echo "PCMD Options: $options"
     echo "Full classpath consists of: $clientlibs"
 fi
 
