@@ -1,18 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+  <groupId>com.polopoly.ps.tools</groupId>
   <artifactId>pcmd-client</artifactId>
+  <version>2.0</version>
   <packaging>pom</packaging>
   
   <name>pcmd-client</name>
-  
-  <parent>
-    <artifactId>pstools-parent</artifactId>
-    <groupId>com.polopoly.ps.tools</groupId>
-    <version>10.5-DR3-SNAPSHOT-2</version>
-    <relativePath>../pom.xml</relativePath>
-  </parent>
-    
+     
   <build>
   	<plugins>
   		<plugin>
@@ -60,12 +54,12 @@
     <dependency>
       <groupId>com.polopoly.ps.tools</groupId>
       <artifactId>hotdeploy-pcmd-tools</artifactId>
-      <version>${project.version}</version>
+      <version>2.0</version>
     </dependency>
     <dependency>
       <groupId>com.polopoly.ps.tools</groupId>
       <artifactId>pcmd</artifactId>
-      <version>${project.version}</version>
+      <version>2.0</version>
     </dependency>
     <dependency>
       <groupId>jboss</groupId>
@@ -75,7 +69,7 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
-      <version>2.3</version>
+      <version>2.4</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
