@@ -6,47 +6,47 @@ peardir=`ps aux | grep java | grep -v grep | grep -m 1 -o '[^: =]*/pear' | head 
 
 if [ "" != "$POLOPOLY_SERVER" ]
 then
-        options="$options --server=$POLOPOLY_SERVER"
+    options="$options --server=$POLOPOLY_SERVER"
 fi
 
 if [ "" != "$POLOPOLY_USER" ]
 then
-        options="$options --loginuser=$POLOPOLY_USER"
+    options="$options --loginuser=$POLOPOLY_USER"
 fi
 
 if [ "" != "$POLOPOLY_PASSWORD" ]
 then
-        options="$options --loginpassword=$POLOPOLY_PASSWORD"
+    options="$options --loginpassword=$POLOPOLY_PASSWORD"
 fi
 
 ## The options does not work together with help
 if [[ "help" = $1 ]]
 then
-   options=""
+    options=""
 fi
 
-if [ -d $dir/custom-lib ] 
+if [ -d $dir/custom-lib ]
 then
     for file in $dir/custom-lib/*.jar ; do
         clientlibs=$clientlibs:$file
     done
 fi
 
-if [ -d $dir/lib ] 
+if [ -d $dir/lib ]
 then
     for file in $dir/lib/*.jar ; do
         clientlibs=$clientlibs:$file
     done
 fi
 
-if [ -d "$peardir/../custom/client-lib" ] 
+if [ -d "$peardir/../custom/client-lib" ]
 then
     for file in $peardir/../custom/client-lib/*.jar ; do
         clientlibs=$clientlibs:$file
     done
 fi
 
-if [ -d "$peardir/jar-repository/policy-lib" ] 
+if [ -d "$peardir/jar-repository/policy-lib" ]
 then
     for file in $peardir/jar-repository/policy-lib/*.jar ; do
         clientlibs=$clientlibs:$file
