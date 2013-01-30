@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.polopoly.ps.tools</groupId>
   <artifactId>pcmd-client</artifactId>
-  <version>2.1-nrk-SNAPSHOT</version>
+  <version>2.0-nrk-SNAPSHOT</version>
   <packaging>pom</packaging>
   
   <name>pcmd-client</name>
@@ -76,7 +76,7 @@
     <dependency>
       <groupId>com.polopoly.ps.tools</groupId>
       <artifactId>pcmd</artifactId>
-      <version>2.1-nrk-SNAPSHOT</version>
+      <version>2.0-nrk-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>jboss</groupId>
