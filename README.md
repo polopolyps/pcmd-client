@@ -1,4 +1,6 @@
-**The pcmd-client has been moved into the pcmd module instead due to the strong dependency between the two. This means that the pcmd-client source module should no longer be used and that it will not be maintained further!**
+**The pcmd-client has been moved into the pcmd https://github.com/polopolyps/pcmd module instead due to the strong dependency between the two. This means that the pcmd-client source module should no longer be used and that it will not be maintained further!**
+
+
 
 pcmd-client
 ===========
